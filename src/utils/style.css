@@ -1,0 +1,65 @@
+.range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  width: 100%;
+  margin-top: 0px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: grey;
+  height: 1px;
+  background color: grey;
+}
+
+input[type=range]:focus {
+  outline: #e0e0e0 1px;
+}
+
+input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  background: grey;
+  height: 1px;
+  padding:0;
+  margin:0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  max-width: 15px;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 15px;
+  bottom: 6px;
+  background-color: #e0e0e0;
+  cursor: -webkit-grab;
+
+ /* -webkit-transition: border 1000ms ease;
+  transition: border 1000ms ease;*/
+}
+
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 15px;
+  width: 15px;
+  max-width: 15px;
+  position: relative;
+  bottom: 6px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-color: #e0e0e0;
+  cursor: -moz-grab;
+  /*-moz-transition: border 1000ms ease;
+  transition: border 1000ms ease;*/
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  cursor: -webkit-grabbing;
+}
+
+input[type=range]::-moz-range-thumb:active {
+  cursor: -moz-grabbing;
+}
